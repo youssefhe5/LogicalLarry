@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,34 +11,56 @@ public class PushButton : MonoBehaviour
     public GameObject gameObject;
     public int variable = 0;
     public bool canPush = false;
+    public bool isZero;
+    public TMP_Text number;
 
-
+    private float time;
     private int pushCount = 1;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         gameObject = GetComponent<GameObject>();
+        number.text = variable + "";
+        if (variable == 0)
+        {
+            isZero = true;
+        } else
+        {
+            isZero = false;
+        }
+    }
+
+    private void Update()
+    {
+        time += Time.deltaTime;
     }
 
     private void OnMouseOver()
     {
         
-        if (Input.GetMouseButtonDown(0) && canPush)
+        if (Input.GetMouseButtonDown(0) && canPush && (animator.GetCurrentAnimatorStateInfo(0).IsTag("LeftButtonIdle") || animator.GetCurrentAnimatorStateInfo(0).IsTag("RightButtonIdle")) && time > 0.5f)
         {
+            time = 0;
             animator.SetTrigger("Trigger");
+            Debug.Log(animator.GetInstanceID());
             canPush = false;
             pushCount++;
-            if (pushCount % 2 == 0)
+            if (isZero)
             {
                 variable = 1;
-                
+                number.text = variable + "";
+                isZero = false;
+
             } else
             {
+                
                 variable = 0;
+                number.text = variable + "";
+                isZero = true;
             }
-            
-            Debug.Log("Mouse pressed on Red Button");
+
+            Debug.Log("Mouse pressed on " + this.name +  " button");
         }
     }
 
