@@ -13,9 +13,11 @@ public class PushButton : MonoBehaviour
     public bool canPush = false;
     public bool isZero;
     public TMP_Text number;
+    public Material red;
+    public Material green;
 
     private float time;
-    private int pushCount = 1;
+    private int pushCount = 0;
 
     private void Start()
     {
@@ -51,6 +53,7 @@ public class PushButton : MonoBehaviour
                 variable = 1;
                 number.text = variable + "";
                 isZero = false;
+                this.GetComponent<Renderer>().material = green;
 
             } else
             {
@@ -58,6 +61,7 @@ public class PushButton : MonoBehaviour
                 variable = 0;
                 number.text = variable + "";
                 isZero = true;
+                this.GetComponent<Renderer>().material = red;
             }
 
             Debug.Log("Mouse pressed on " + this.name +  " button");

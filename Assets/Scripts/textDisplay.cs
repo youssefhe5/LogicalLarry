@@ -14,12 +14,6 @@ public class textDisplay : MonoBehaviour
 
     public PushButton pushButton;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -27,17 +21,6 @@ public class textDisplay : MonoBehaviour
         textPosition.z -= 10;
         text.transform.position = textPosition;
         text.text = pushButton.variable + "";
-
-        //TODO: Create a way to display button presses (zero or one) onto logic box
     }
 
-    private void newNumber()
-    {
-        if (pushButton.variable == 1)
-        {
-
-            //GameObject newZero = Instantiate(one, this.gameObject.transform.position, this.gameObject.transform.rotation) as GameObject;
-
-        }
-    }
 }
