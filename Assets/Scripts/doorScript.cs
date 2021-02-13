@@ -20,6 +20,10 @@ public class doorScript : MonoBehaviour
         if (andGateWire.solved)
         {
             animator.SetTrigger("Trigger");
+            animator.speed = 1;
+        } else
+        {
+            animator.speed = 0;
         }
     }
 }

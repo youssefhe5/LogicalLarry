@@ -21,18 +21,19 @@ public class MouseRotationBody : MonoBehaviour
     {
 
 
-        
 
-       if (Input.GetKeyDown(KeyCode.LeftAlt))
+
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
             canRotate = false;
-        } else if (Input.GetKeyUp(KeyCode.LeftAlt)) 
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftAlt))
         {
             canRotate = true;
-        
+
         }
 
-       if (canRotate)
+        if (canRotate)
         {
             yaw += XSensitivity * Input.GetAxis("Mouse X");
             transform.eulerAngles = new Vector3(0f, yaw, 0f);
