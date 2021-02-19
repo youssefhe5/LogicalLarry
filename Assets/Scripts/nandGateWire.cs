@@ -22,7 +22,7 @@ public class nandGateWire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((rightButton.variable == 0) && (leftButton.variable == 0))
+        if (!((rightButton.variable == 1) && (leftButton.variable == 1)))
         {
             solved = true;
             this.GetComponent<Renderer>().material = green;
