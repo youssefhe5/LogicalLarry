@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
             }
         } else
         {
-            Debug.Log("Not Grounded");
+            //Debug.Log("Not Grounded");
         }
 
         

@@ -8,6 +8,7 @@ TagManager:
   - NAND
   - OR
   - NOR
+  - Environment
   layers:
   - Default
   - TransparentFX

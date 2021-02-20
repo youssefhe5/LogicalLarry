@@ -37,10 +37,11 @@ public class Pickupable : MonoBehaviour
         if (Mathf.Abs(hand.transform.position.x - item.transform.position.x) < distance)
         {
             item.GetComponent<Rigidbody>().useGravity = false;
-            item.GetComponent<Rigidbody>().isKinematic = true;
+            //item.GetComponent<Rigidbody>().isKinematic = true;
             item.transform.position = hand.transform.position;
             item.transform.rotation = hand.transform.rotation;
             item.transform.parent = hand.transform.parent;
+            item.GetComponent<Rigidbody>().freezeRotation = true;
 
             rightPressed = true;
 
@@ -52,9 +53,19 @@ public class Pickupable : MonoBehaviour
     private void OnMouseUp()
     {
         item.GetComponent<Rigidbody>().useGravity = true;
-        item.GetComponent<Rigidbody>().isKinematic = false;
+        //item.GetComponent<Rigidbody>().isKinematic = false;
         item.transform.parent = null;
         rightPressed = false;
+        item.GetComponent<Rigidbody>().freezeRotation = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals("Environment"))
+        {
+            OnMouseUp();
+        }
+        
     }
 
 }
