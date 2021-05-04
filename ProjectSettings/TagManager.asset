@@ -9,6 +9,10 @@ TagManager:
   - OR
   - NOR
   - Environment
+  - Battery
+  - Dog
+  - Cube
+  - Wire
   layers:
   - Default
   - TransparentFX

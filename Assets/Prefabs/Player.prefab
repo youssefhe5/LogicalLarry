@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 923255075257779465}
   - component: {fileID: 923255075257779464}
   m_Layer: 0
-  m_Name: Player 2
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -373,8 +373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   XSensitivity: 2
   YSensitivity: 2
-  minimumY: -30
-  maximumY: 30
+  minimumY: -45
+  maximumY: 45
   minimumX: -90
   maximumX: 90
   playerCamera: {fileID: 923255073549000234}
