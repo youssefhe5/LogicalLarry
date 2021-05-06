@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3362738642699330418}
   - component: {fileID: 3362738642699330419}
   - component: {fileID: 3362738642699330416}
-  - component: {fileID: 2668573980261125942}
   m_Layer: 0
   m_Name: GenericWire
   m_TagString: Untagged
@@ -97,21 +96,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2668573980261125942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3362738642699330422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0e898217c183d444af080ea0cbfaf31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  andGateWire: {fileID: 0}
-  red: {fileID: 2100000, guid: 8447ea1d26c15884b82460a0446f05fa, type: 2}
-  green: {fileID: 2100000, guid: 1e53a2089d4b03c4aa503bb12f17f3cf, type: 2}
 --- !u!1 &3362738643295991103
 GameObject:
   m_ObjectHideFlags: 0

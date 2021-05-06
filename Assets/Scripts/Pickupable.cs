@@ -17,6 +17,10 @@ public class Pickupable : MonoBehaviour
     void Start()
     {
         item.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        if (hand == null)
+        {
+            hand = GameObject.Find("Hand");
+        }
     }
 
     private void Update()
@@ -67,6 +71,12 @@ public class Pickupable : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals("Environment") && gameObject.GetComponent<BoxCollider>())
+        {
+            OnMouseUp();
+        } else if (other.gameObject.tag.Equals("Door") && gameObject.GetComponent<BoxCollider>())
+        {
+            OnMouseUp();
+        } else if (other.gameObject.tag.Equals("Goal") && gameObject.GetComponent<BoxCollider>())
         {
             OnMouseUp();
         }

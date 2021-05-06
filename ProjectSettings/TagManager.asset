@@ -13,6 +13,10 @@ TagManager:
   - Dog
   - Cube
   - Wire
+  - Goal
+  - Door
+  - GreenCube
+  - RedCube
   layers:
   - Default
   - TransparentFX

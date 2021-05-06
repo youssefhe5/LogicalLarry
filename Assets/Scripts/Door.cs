@@ -50,6 +50,24 @@ public class Door : MonoBehaviour
             {
                 StartCoroutine(OpenDoorWithPressurePlate());
             }
+        } else if (wire.GetComponent<Goal>() != null)
+        {
+            if (wire.GetComponent<Goal>().goalScored)
+            {
+                animator.SetTrigger("OpenDoor");
+            }
+        } else if (wire.GetComponent<RedGoal>() != null)
+        {
+            if (wire.GetComponent<RedGoal>().goalScored)
+            {
+                animator.SetTrigger("OpenDoor");
+            }
+        } else if (wire.GetComponent<GreenGoal>() != null)
+        {
+            if (wire.GetComponent<GreenGoal>().goalScored)
+            {
+                animator.SetTrigger("OpenDoor");
+            }
         }
 
     }
