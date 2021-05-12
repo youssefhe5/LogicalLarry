@@ -4,6 +4,7 @@ In Logical Larry, you play as a machine learning agent that is tasked with solvi
 # Controls
 
 WASD to move
+
 Space to jump
 Hold alt and move mouse to look around (release to look forward again)
 Press left mouse button to interact with buttons
