@@ -17,6 +17,7 @@ TagManager:
   - Door
   - GreenCube
   - RedCube
+  - Music
   layers:
   - Default
   - TransparentFX
