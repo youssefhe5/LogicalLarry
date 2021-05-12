@@ -1,4 +1,4 @@
-# LogicalLarry
+# Logical Larry
 In Logical Larry, you play as a machine learning agent that is tasked with solving different puzzles in order to live on. Different puzzles involve difficult tasks that humans would rather automate and therefore are your responsibility. Have fun!
 
 # Controls
