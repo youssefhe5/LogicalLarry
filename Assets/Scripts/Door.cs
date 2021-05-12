@@ -68,6 +68,12 @@ public class Door : MonoBehaviour
             {
                 animator.SetTrigger("OpenDoor");
             }
+        } else if (wire.GetComponent<WireCheck>() != null)
+        {
+            if (wire.GetComponent<WireCheck>().complete)
+            {
+                animator.SetTrigger("OpenDoor");
+            }
         }
 
     }

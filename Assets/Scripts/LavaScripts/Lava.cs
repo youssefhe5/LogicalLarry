@@ -8,7 +8,7 @@ public class Lava : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag.Equals("Player"))
+        if (other.gameObject.tag.Equals("Player") || other.gameObject.tag.Equals("Battery"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

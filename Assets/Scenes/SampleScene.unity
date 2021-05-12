@@ -629,6 +629,7 @@ MonoBehaviour:
   andGateWire: {fileID: 2120079484}
   red: {fileID: 2100000, guid: 8447ea1d26c15884b82460a0446f05fa, type: 2}
   green: {fileID: 2100000, guid: 1e53a2089d4b03c4aa503bb12f17f3cf, type: 2}
+  wireActivated: 0
 --- !u!4 &851218182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3362738642699330417, guid: d95824918ce5e1d45a837d2405defb69,
@@ -673,41 +674,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2802378876901797711}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1058780155 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3876329513958339941, guid: ac142dca653ac574cb2a605e2aba3429,
-    type: 3}
-  m_PrefabInstance: {fileID: 3876329512899888798}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1058780159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058780155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d734a55eebfe134f833803fbd52e25c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 1058780155}
-  hand: {fileID: 1199512224}
-  distance: 5
-  throwPower: 10
---- !u!65 &1058780160
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058780155}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1115409231
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +889,7 @@ MonoBehaviour:
   andGateWire: {fileID: 2120079484}
   red: {fileID: 2100000, guid: 8447ea1d26c15884b82460a0446f05fa, type: 2}
   green: {fileID: 2100000, guid: 1e53a2089d4b03c4aa503bb12f17f3cf, type: 2}
+  wireActivated: 0
 --- !u!4 &1367784584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3362738642699330417, guid: d95824918ce5e1d45a837d2405defb69,
@@ -1541,6 +1508,7 @@ MonoBehaviour:
   andGateWire: {fileID: 2120079484}
   red: {fileID: 2100000, guid: 8447ea1d26c15884b82460a0446f05fa, type: 2}
   green: {fileID: 2100000, guid: 1e53a2089d4b03c4aa503bb12f17f3cf, type: 2}
+  wireActivated: 0
 --- !u!114 &2120079484 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5771508623188686302, guid: 04a1ac4ce75a1024ea8990e7fc9af69e,
@@ -2308,10 +2276,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1058780156, guid: ac142dca653ac574cb2a605e2aba3429, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 1058780159, guid: ac142dca653ac574cb2a605e2aba3429, type: 3}
+      propertyPath: hand
+      value: 
+      objectReference: {fileID: 1199512224}
     - target: {fileID: 3876329513958339938, guid: ac142dca653ac574cb2a605e2aba3429,
         type: 3}
       propertyPath: m_RootOrder
@@ -2371,11 +2339,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: battery
-      objectReference: {fileID: 0}
-    - target: {fileID: 3876329513958339941, guid: ac142dca653ac574cb2a605e2aba3429,
-        type: 3}
-      propertyPath: m_TagString
-      value: Battery
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac142dca653ac574cb2a605e2aba3429, type: 3}

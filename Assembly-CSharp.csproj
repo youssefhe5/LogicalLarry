@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GoalScripts\ChangeGoalType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\ColorChangeAndGate.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Scripts\WireCheck\WireCheck.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -113,6 +115,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\Scripts\OpenRoomDoor.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
@@ -120,7 +123,28 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\OrGateWire.cs" />
-    <Compile Include="Assets\Scripts\GoalScripts\ChangeGoalType.cs" />
+    <Compile Include="Assets\Scripts\MovingCube\MoveCube.cs" />
+    <Compile Include="Assets\Scripts\DeliverBatteries\BatteryDeilvery.cs" />
+    <Compile Include="Assets\Scripts\DeliverBatteries\ShowBatteries.cs" />
+    <Compile Include="Assets\Scripts\OpenLevel3Door\OpenLevel3Door.cs" />
+    <Compile Include="Assets\Scripts\MainMenuScripts\GoToLevelsMenu.cs" />
+    <Compile Include="Assets\Scripts\LevelsMenuScripts\BackToMainMenu.cs" />
+    <Compile Include="Assets\Scripts\MainMenuScripts\Quit.cs" />
+    <Compile Include="Assets\Scripts\LevelsMenuScripts\GoToTutorial.cs" />
+    <Compile Include="Assets\Scripts\LevelsMenuScripts\Level1.cs" />
+    <Compile Include="Assets\Scripts\LevelsMenuScripts\Level2.cs" />
+    <Compile Include="Assets\Scripts\LevelsMenuScripts\Level3.cs" />
+    <Compile Include="Assets\Scripts\MainMenuScripts\Play.cs" />
+    <Compile Include="Assets\Scripts\SaveLevels\SaveLevel1.cs" />
+    <Compile Include="Assets\Scripts\SaveLevels\SaveLevel2.cs" />
+    <Compile Include="Assets\Scripts\SaveLevels\SaveLevel3.cs" />
+    <Compile Include="Assets\Scripts\ControlMenu\ControlMenu.cs" />
+    <Compile Include="Assets\Scripts\Karen\KarenTutorial.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu\ShowControls.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu\Resume.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu\Back.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu\QuitToMainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

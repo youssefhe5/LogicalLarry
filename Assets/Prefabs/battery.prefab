@@ -173,9 +173,11 @@ GameObject:
   - component: {fileID: 3876329513958339938}
   - component: {fileID: 1058780157}
   - component: {fileID: 1058780156}
+  - component: {fileID: 1058780160}
+  - component: {fileID: 1058780159}
   m_Layer: 0
   m_Name: battery
-  m_TagString: Untagged
+  m_TagString: Battery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,6 +228,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06339741, y: 0.15113878, z: 0.10777664}
   m_Center: {x: -0.00028133392, y: 0.0026452541, z: -0.000510931}
+--- !u!65 &1058780160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3876329513958339941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1058780159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3876329513958339941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d734a55eebfe134f833803fbd52e25c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 3876329513958339941}
+  hand: {fileID: 0}
+  distance: 5
+  throwPower: 10
 --- !u!1 &6990409164779163085
 GameObject:
   m_ObjectHideFlags: 0

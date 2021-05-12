@@ -6,6 +6,8 @@ public class MouseRotationBody : MonoBehaviour
 {
 
     public float XSensitivity = 2f;
+    public bool paused = false;
+
     private float yaw;
     private bool canRotate = true;
 
@@ -20,33 +22,36 @@ public class MouseRotationBody : MonoBehaviour
     void Update()
     {
 
-
-
-
-        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        if (!paused)
         {
-            canRotate = false;
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftAlt))
-        {
-            canRotate = true;
+            if (Input.GetKeyDown(KeyCode.LeftAlt))
+            {
+                canRotate = false;
+            }
+            else if (Input.GetKeyUp(KeyCode.LeftAlt))
+            {
+                canRotate = true;
 
+            }
+
+            if (canRotate)
+            {
+                yaw += XSensitivity * Input.GetAxis("Mouse X");
+                transform.eulerAngles = new Vector3(0f, yaw, 0f);
+            }
+
+            if (Input.GetKeyDown("escape"))
+            {
+                Cursor.lockState = CursorLockMode.None;
+            }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
 
-        if (canRotate)
-        {
-            yaw += XSensitivity * Input.GetAxis("Mouse X");
-            transform.eulerAngles = new Vector3(0f, yaw, 0f);
-        }
 
-        if (Input.GetKeyDown("escape"))
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+        
     }
 }

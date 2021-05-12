@@ -174,6 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8612184179040841092}
   - component: {fileID: 8612184179040841089}
+  - component: {fileID: 6783443560201121590}
   m_Layer: 0
   m_Name: Green Goal
   m_TagString: Goal
@@ -214,6 +215,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6291652, y: 0.7034529, z: 1.6498451}
   m_Center: {x: -0.42114377, y: 0.14827356, z: -0.28209496}
+--- !u!114 &6783443560201121590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612184179040841095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6228b508d724194dbfa01077da0bf27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goalScored: 0
+  redCube: {fileID: 0}
+  spawnRedCubeLocation: {fileID: 0}
 --- !u!1 &8612184179441531084
 GameObject:
   m_ObjectHideFlags: 0
